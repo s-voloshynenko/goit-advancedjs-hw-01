@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #2e2f42;
+  --border-color: #808080;
+  --accent: #4e75ff;
+  --accent-hover: #6c8cff;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--text-color);
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.home {
+  padding: 24px 16px;
+}
+
+.home-title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.home-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.home-list a {
+  color: var(--accent);
+  transition: color var(--transition);
+}
+
+.home-list a:hover,
+.home-list a:focus-visible {
+  color: var(--accent-hover);
+}
